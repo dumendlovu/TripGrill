@@ -1,0 +1,136 @@
+$mainFont: 'Lato', sans-serif;
+$darkBlue: #242331;
+$limeGreen: #DDF9C1;
+$orange: #F9A03F;
+$plainWhite: #FFF;
+
+*{
+  font-family: $mainFont;
+}
+section{
+  padding: 20px;
+  h1{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -4px;
+    text-align: center;
+  }
+  p{
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+header{
+  background-color: $darkBlue;
+  padding: 20px;
+  #headLogo{
+    img{
+      height: 80px;
+    }
+  }
+  .custHeader{
+    color: $orange;
+  }
+  #reservationBTN{
+    background-color: transparentize($plainWhite, 1);
+    border: $orange solid 1px;
+    color: $orange;
+  }
+}
+#homeSlideShow{
+  background-color: $darkBlue;
+  padding: 0;
+  padding-bottom: 15px;
+}
+#homeOpener{
+  background-color: $orange;
+  color: $darkBlue;
+}
+#homeLiveBands{
+  background-color: $darkBlue;
+  color: $limeGreen;
+  padding: 0;
+  span{
+    font-weight: 400;
+  }
+}
+#homeMenu{
+  color: $darkBlue;
+  padding: 0;
+  #homeMenuBTN{
+    background-color: transparentize($plainWhite, 1);
+    border: $darkBlue solid 1px;
+    color: $darkBlue;
+  }
+  #homeMenuBTN:hover{
+    background-color: $darkBlue;
+    color: $plainWhite;
+  }
+}
+#homeNewsletterSignUp{
+  background-color: $limeGreen;
+  color: $darkBlue;
+  /* label color */
+  .input-field label {
+    color: $darkBlue;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: $darkBlue;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid $darkBlue;
+    box-shadow: 0 1px 0 0 $darkBlue;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid $darkBlue;
+    box-shadow: 0 1px 0 0 $darkBlue;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: $darkBlue;
+  }
+  .custBTN{
+    background-color: transparentize($plainWhite, 1);
+    border: $darkBlue solid 1px;
+    color: $darkBlue;
+  }
+  .custBTN:hover{
+    background-color: $darkBlue;
+    color: $limeGreen;
+  }
+}
+footer{
+  background-color: $darkBlue;
+  color: $orange;
+  padding: 20px;
+  text-align: center;
+  h2{
+    font-size: 32px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 16px;
+  }
+  ul{
+    li{
+      a{
+        color: $orange;
+        font-size: 16px;
+      }
+    }
+  }
+  ion-icon{
+    color: $orange;
+    margin: 0 10px;
+  }
+  ion-icon:hover{
+    background-color:$orange;
+    color: $darkBlue;
+  }
+}
